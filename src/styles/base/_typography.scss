@@ -1,0 +1,66 @@
+@use "../abstracts/variables" as *;
+@use "../abstracts/mixins" as *;
+
+:root {
+  @each $screen-size, $font-sizes in $type-scale {
+    @each $font-size, $value in $font-sizes {
+      --fs-#{$screen-size}-#{$font-size}: #{$value};
+    }
+  }
+}
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.txt-300 {
+  font-size: var(--fs-sm-300);
+
+  @include respond-to("tablet-landscape-up") {
+    font-size: var(--fs-lg-300);
+  }
+}
+
+.txt-400 {
+  font-size: var(--fs-sm-400);
+
+  @include respond-to("tablet-landscape-up") {
+    font-size: var(--fs-lg-400);
+  }
+}
+
+.txt-500 {
+  font-size: var(--fs-sm-500);
+
+  @include respond-to("tablet-landscape-up") {
+    font-size: var(--fs-lg-500);
+  }
+}
+
+.txt-600 {
+  font-size: var(--fs-sm-600);
+
+  @include respond-to("tablet-landscape-up") {
+    font-size: var(--fs-lg-600);
+  }
+}
+
+.txt-700 {
+  font-size: var(--fs-sm-700);
+
+  @include respond-to("tablet-landscape-up") {
+    font-size: var(--fs-lg-700);
+  }
+}
+
+.txt-800 {
+  font-size: var(--fs-sm-800);
+
+  @include respond-to("tablet-landscape-up") {
+    font-size: var(--fs-lg-800);
+  }
+}
+
+.txt-900 {
+  font-size: var(--fs-lg-900);
+}

@@ -1,0 +1,20 @@
+body {
+  background-color: var(--clr-bg-primary);
+}
+
+main {
+  width: 600px;
+  height: 300px;
+  background-color: var(--clr-bg-accent);
+  border-radius: 1em;
+  margin-inline: auto;
+}
+
+.app-title {
+  font-size: var(--fs-lg-800);
+  font-weight: 600;
+  color: var(--clr-font-light);
+  width: fit-content;
+  margin-inline: auto;
+  text-decoration: underline solid var(--clr-font-accent) 2px;
+}
